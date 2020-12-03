@@ -3,18 +3,18 @@ function HelloWorld(props) {
       <Page>
         <Section
           title={<Text bold align="center">Location settings</Text>}>
+        
         <Text>This will be used to get the weather data</Text>
-          <TextInput
-            settingsKey="lat"
-            label="Latitude"
-            title="Latitude"
-          />
-         <TextInput
-            settingsKey="lng"
-            label="Longitude"
-            title="Longitude"
-          />
-         
+
+        <TextInput
+            settingsKey="city"
+            label="City"
+            title="City"
+            type="text"
+            placeholder="Lisbon, Portugal"
+        />
+
+        
          <TextInput
             settingsKey="key"
             label="Open Weather Map Key"
