@@ -1,6 +1,5 @@
 import clock from "clock";
 import document from "document";
-import { preferences } from "user-settings";
 import * as util from "../common/utils";
 import * as messaging from "messaging";
 import { battery } from "power";
@@ -17,9 +16,6 @@ const date_element = document.getElementById("date");
 const weather_element = document.getElementById("weather_icon");
 const battery_level_element = document.getElementById("bat_level")
 const heart_rate_element = document.getElementById("heart_rate")
-
-// Update the <text> element every tick with the current time
-console.log(document.getElementById("cont").getBBox().width)
 
 const hrm = new HeartRateSensor();
 
