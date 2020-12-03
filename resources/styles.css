@@ -1,0 +1,41 @@
+.background {
+  viewport-fill: black;
+}
+
+*{
+  text-anchor: middle;
+  fill:white;
+}
+
+#time {
+  font-size: 80;
+  text-length: 32;
+  y:30%+40;
+  font-family: System-Bold;
+  stroke-width:12;
+  x: 50%;
+  
+  
+}
+
+#date{
+  font-size: 35;
+  text-length: 32;
+  x: 50%;
+  y:30%+40+18+35;
+}
+
+#subbar{
+  x: 50%-120;
+  y:30%+40+18+30+40;
+}
+
+#subbar * {
+  text-anchor: start;
+  font-size:35
+ 
+}
+
+#heart_rate{
+   text-length:200;
+}

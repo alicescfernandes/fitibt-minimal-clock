@@ -1,0 +1,33 @@
+{
+  "fitbit": {
+    "appUUID": "9c63e95d-d584-48cb-b315-f83e0737aa2a",
+    "appType": "clockface",
+    "appDisplayName": "Minimal Clock",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_internet",
+      "run_background",
+      "access_heart_rate"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Minimal Clock"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "^5.0.1",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "scripts": {
+    "build":"./node_modules/@fitbit/sdk/bin/fitbit-build.js",
+    "start":" ./node_modules/@fitbit/sdk-cli/lib/cli.js",
+    "build-global": "fitbit-build"
+  }
+}
