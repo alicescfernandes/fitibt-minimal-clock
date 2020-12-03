@@ -13,7 +13,6 @@ function HelloWorld(props) {
             type="text"
             placeholder="Lisbon, Portugal"
         />
-
         
          <TextInput
             settingsKey="key"
