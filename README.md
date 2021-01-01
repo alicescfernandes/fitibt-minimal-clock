@@ -1,4 +1,5 @@
 # ⌚ Fitibt Minimal Clock Face
+
 A clock face compatible with Fitbit Sense and Versa 3 that shows a couple of info. It was made by eye so don't mind the position of the UI elements and some weather icons on the clock  
 ![image](face.png)
 
@@ -26,3 +27,4 @@ The weather icons come from this [page](https://www.deviantart.com/ncrystal/art/
 
 ### Weather data
 It's provided by the Open Weather Map API
+<img src="https://www.google-analytics.com/collect?v=1&amp;t=event&amp;tid=UA-100869248-2&amp;cid=555&amp;ec=github&amp;ea=pageview&amp;el=fitbit-minimal&amp;ev=1" alt=""> 
