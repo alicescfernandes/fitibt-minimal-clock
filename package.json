@@ -26,8 +26,8 @@
     "@fitbit/sdk-cli": "^1.7.3"
   },
   "scripts": {
-    "build":"./node_modules/@fitbit/sdk/bin/fitbit-build.js",
-    "start":" ./node_modules/@fitbit/sdk-cli/lib/cli.js",
+    "build": "./node_modules/@fitbit/sdk/bin/fitbit-build.js",
+    "start": " ./node_modules/@fitbit/sdk-cli/lib/cli.js",
     "build-global": "fitbit-build"
   }
 }

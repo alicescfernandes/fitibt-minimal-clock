@@ -1,16 +1,16 @@
 <svg class="background">
-   
-  <g id="clock" fill="white">
-    <text id="time" />
-    <text id="date" />
 
-      <section id="subbar">
-        <g id="cont">
-          <image x="0" y="0" id="weather_icon" width="40" height="40" href="images/wait.png"></image>
-          <text id="bat_level" x="65" y="32">100%</text>
-          <text id="heart_rate" x="145" y="32">❤️</text>
-        </g>
+  <g id="clock" fill="white">
+    <text x="50%" id="time" />
+    <text x="50%+95" id="hour"></text>
+    <text id="date" />
+    <section id="subbar">
+      <g id="cont">
+        <image x="0" y="0" id="weather_icon" width="40" height="40" href="images/wait.png"></image>
+        <text id="bat_level" x="65" y="32">100%</text>
+        <text id="heart_rate" x="160" y="32">❤️</text>
+      </g>
     </section>
   </g>
-  
+
 </svg>

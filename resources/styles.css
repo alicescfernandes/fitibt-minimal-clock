@@ -13,17 +13,26 @@
   y:30%+40;
   font-family: System-Bold;
   stroke-width:12;
-  x: 50%;
-  
-  
+  /*x: 50%-25;*/
+}
+
+#hour{
+  font-size: 25;
+  text-length: 32;
+  font-family: System-Bold;
+  /* x: 50%+95; */
+  y:30%+40;
+
 }
 
 #date{
-  font-size: 35;
+  font-size: 25;
   text-length: 32;
   x: 50%;
   y:30%+40+18+35;
 }
+
+
 
 #subbar{
   x: 50%-120;
