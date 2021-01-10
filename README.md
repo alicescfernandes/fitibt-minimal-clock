@@ -9,7 +9,7 @@ Or here [https://gallery.fitbit.com/details/9c63e95d-d584-48cb-b315-f83e0737aa2a
 
 ## TODO:
 - [ ] Finish localization (like all languages)
-- [x] Add suport for a 12h hour watches
+- [x] Add suport for a 12h hour watches ✅
 - [ ] Better error handling
 - [ ] ~~Lat Lng in settings~~ Add support for geo-location
 - [ ] Validate inputs on setttings page (https://dev.fitbit.com/build/reference/settings-api/#components)
