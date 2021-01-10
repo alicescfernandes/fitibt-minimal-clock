@@ -8,15 +8,14 @@ You can install it [here](https://gallery.fitbit.com/details/9c63e95d-d584-48cb-
 Or here [https://gallery.fitbit.com/details/9c63e95d-d584-48cb-b315-f83e0737aa2a](https://gallery.fitbit.com/details/9c63e95d-d584-48cb-b315-f83e0737aa2a)
 
 ## TODO:
-- Finish localization (like all languages)
-- Add suport for a 12h hour watches
-- Better error handling
-- ~~Lat Lng in settings~~
-- Validate inputs on setttings page
+- [ ] Finish localization (like all languages)
+- [x] Add suport for a 12h hour watches
+- [ ] Better error handling
+- [ ]~~Lat Lng in settings~~ Add support for geo-location
+- [ ] Validate inputs on setttings page
     https://dev.fitbit.com/build/reference/settings-api/#components
 - ~~change weather to city country~~
-- check if old value is equal to new value on change event
-
+- [ ] check if old value is equal to new value on change event
 ## BUGS:
 - ~~Invalid longitude and latitude values~~
 
