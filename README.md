@@ -8,7 +8,7 @@ You can install it [here](https://gallery.fitbit.com/details/9c63e95d-d584-48cb-
 Or here [https://gallery.fitbit.com/details/9c63e95d-d584-48cb-b315-f83e0737aa2a](https://gallery.fitbit.com/details/9c63e95d-d584-48cb-b315-f83e0737aa2a)
 
 ## TODO:
-- [ ] AOD
+- [ ] AOD (https://dev.fitbit.com/blog/2019-12-19-announcing-fitbit-os-sdk-4.1/#always-on-display-api)
 - [ ] Finish localization (like all languages) (https://dev.fitbit.com/build/guides/localization/)
 - [x] ✅ Add suport for a 12h hour watches 
 - [ ] Better error handling
