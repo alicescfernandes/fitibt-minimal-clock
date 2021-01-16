@@ -10,6 +10,8 @@ import { preferences } from 'user-settings';
 
 // Update the clock every minute
 clock.granularity = 'minutes';
+//trigger build
+// asd
 
 // Get a handle on the <text> element
 const time_element = document.getElementById('time');
