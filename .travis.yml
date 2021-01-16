@@ -25,4 +25,4 @@ deploy:
     skip_cleanup: true
     on:
         tags: false
-    draft: true
+    #draft: true
