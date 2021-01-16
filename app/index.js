@@ -46,14 +46,14 @@ clock.ontick = (evt) => {
 	let mins = util.zeroPad(today.getMinutes());
 
 	if (preferences.clockDisplay === '12h') {
-    time_element.x = (336 / 2) - 25
-    
+		time_element.x = 336 / 2 - 25;
+
 		if (hours > 12) {
-      hour_element.text = "PM"
+			hour_element.text = 'PM';
+			hours = hours % 12;
 		} else {
-      hour_element.text = "AM"
+			hour_element.text = 'AM';
 		}
-		hours = hours % 12;
 	}
 
 	let displayHours = util.zeroPad(hours);
