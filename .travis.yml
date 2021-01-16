@@ -16,7 +16,7 @@ script:
 
 branches:
     only:
-        - master
+        #- master
         - /^v\d+\.\d+\.\d+.*$/
 
 deploy:
@@ -26,4 +26,3 @@ deploy:
     skip_cleanup: true
     on:
         tags: true
-    #draft: true
