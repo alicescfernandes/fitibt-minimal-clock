@@ -17,6 +17,7 @@ script:
 branches:
     only:
         - master
+    - \d+\.\d+\.\d+.*$
 
 deploy:
     provider: releases
@@ -25,4 +26,5 @@ deploy:
     skip_cleanup: true
     on:
         tags: true
+    
     #draft: true
