@@ -2,7 +2,8 @@ language: node_js
 
 node_js:
     - '12'
-
+before_install:
+    - sudo apt install libsecret-1-0
 install:
     - npm install
 os:
