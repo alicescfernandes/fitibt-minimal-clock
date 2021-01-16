@@ -1,0 +1,27 @@
+language: node_js
+
+node_js:
+    - '12'
+
+install:
+    - yarn
+os:
+    - linux
+env:
+    - TARGET_ARCH=x64
+
+script:
+    - yarn build
+
+branches:
+    only:
+        - master
+
+deploy:
+    provider: releases
+    api_key: $TOKEN
+    file: 'build/app.fba'
+    skip_cleanup: true
+    on:
+        tags: false
+    draft: true
