@@ -35,9 +35,9 @@ The app provides some configurations specifically for the weather:
 - **If for some reason it's not possible to get the coordinates, then the app will fallback to the "City, Country" setting so i advise you to fill both.**
 
 ## Development
-- `https://github.com/alicescfernandes/fitibt-minimal-clock.git`
+- `git clone https://github.com/alicescfernandes/fitibt-minimal-clock.git`
 - `npm install`
-- For this project you don't need to use the npx commands provided on the Fitbit dev starter page. The `package.json` exposes some commands that use the installed packages
+- For this project you don't need to use the `npx` commands provided on the Fitbit dev starter page. The `package.json` exposes some commands that use the installed packages
     - `npm run start` will start the fitbit cli shell (it's the same as `npx fitbit`)
     - `npm run build` will build the app (it's the same as running `npx fitbit-build`)
 ## Resources
