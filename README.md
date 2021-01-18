@@ -29,6 +29,7 @@ The app provides some configurations specifically for the weather:
 - Use geolocation: You can toggle this check to use the geolocation from the watch. This will override the "City, Country" setting. If for some reason it's not possible to get the coordinates, then the app will fallback to the "City, Country" setting so i advise you to fill both.
 
 ### Functionality
+- Compatible with 12h and 24h clocks
 - The app fetches weather info every hour.
 - **If for some reason it's not possible to get the coordinates, then the app will fallback to the "City, Country" setting so i advise you to fill both.**
 ## Resources
