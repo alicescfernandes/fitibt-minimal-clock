@@ -8,19 +8,29 @@ You can install it [here](https://gallery.fitbit.com/details/9c63e95d-d584-48cb-
 Or here [https://gallery.fitbit.com/details/9c63e95d-d584-48cb-b315-f83e0737aa2a](https://gallery.fitbit.com/details/9c63e95d-d584-48cb-b315-f83e0737aa2a)
 
 ## TODO:
-- [ ] AOD (https://dev.fitbit.com/blog/2019-12-19-announcing-fitbit-os-sdk-4.1/#always-on-display-api)
+- [x] ✅ AOD (https://dev.fitbit.com/blog/2019-12-19-announcing-fitbit-os-sdk-4.1/#always-on-display-api)
 - [ ] Finish localization (like all languages) (https://dev.fitbit.com/build/guides/localization/)
 - [x] ✅ Add suport for a 12h hour watches 
 - [x] ✅ Builds with Travis CI
 - [ ] Better error handling
-- [ ] ~~Lat Lng in settings~~ Add support for geo-location
+- [x] ✅ ~~Lat Lng in settings~~ Add support for geo-location
 - [ ] Validate inputs on setttings page (https://dev.fitbit.com/build/reference/settings-api/#components)
 - [x] ✅ change weather to city country
 - [ ] check if old value is equal to new value on change event
 ## BUGS:
 - ~~Invalid longitude and latitude values~~
 
+## Configurations & Functionality
 
+### Configurations
+The app provides some configurations specifically for the weather:
+- City, Country: You can specify a city to get the weather from, such as `Lisbon, Portugal`
+- Open Weather API: If you have an API key, then you can add your own. The app uses a "public" API key, that can be blocked if it reaches the maximum requests
+- Use geolocation: You can toggle this check to use the geolocation from the watch. This will override the "City, Country" setting. If for some reason it's not possible to get the coordinates, then the app will fallback to the "City, Country" setting so i advise you to fill both.
+
+### Functionality
+- The app fetches weather info every hour.
+- **If for some reason it's not possible to get the coordinates, then the app will fallback to the "City, Country" setting so i advise you to fill both.**
 ## Resources
 
 ### Weather Icons
