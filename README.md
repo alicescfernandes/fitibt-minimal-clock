@@ -6,6 +6,7 @@ A clock face compatible with Fitbit Sense and Versa 3 that shows a couple of inf
 
 You can install it [here](https://gallery.fitbit.com/details/9c63e95d-d584-48cb-b315-f83e0737aa2a)  
 Or here [https://gallery.fitbit.com/details/9c63e95d-d584-48cb-b315-f83e0737aa2a](https://gallery.fitbit.com/details/9c63e95d-d584-48cb-b315-f83e0737aa2a)
+The builds are done via Travis CI and published on the [releases page](https://github.com/alicescfernandes/fitibt-minimal-clock/releases/)
 
 ## TODO:
 - [x] ✅ AOD (https://dev.fitbit.com/blog/2019-12-19-announcing-fitbit-os-sdk-4.1/#always-on-display-api)
