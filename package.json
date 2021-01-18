@@ -8,7 +8,8 @@
     "requestedPermissions": [
       "access_internet",
       "run_background",
-      "access_heart_rate"
+      "access_heart_rate",
+      "access_aod"
     ],
     "buildTargets": [
       "atlas",
