@@ -16,7 +16,7 @@ script:
 
 branches:
     only:
-        #- master
+        - master
         - /^v\d+\.\d+\.\d+.*$/
 
 deploy:
