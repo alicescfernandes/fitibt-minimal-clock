@@ -9,6 +9,12 @@
 			"access_internet",
 			"run_background",
 			"access_heart_rate",
+			"access_location"
+		],
+		"requestedPermissions2": [
+			"access_internet",
+			"run_background",
+			"access_heart_rate",
 			"access_aod",
 			"access_location"
 		],

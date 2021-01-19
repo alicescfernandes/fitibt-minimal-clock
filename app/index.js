@@ -55,26 +55,27 @@ function renderFace() {
 
 		hrm.start();
 	} else {
-		weather_element.style.display = 'none';
-		heart_rate_element.style.display = 'none';
+		if (display.aodActive) {
+			weather_element.style.display = 'none';
+			heart_rate_element.style.display = 'none';
 
-		battery_level_element.x = 90;
-		battery_level_element.y = 32;
+			battery_level_element.x = 90;
+			battery_level_element.y = 32;
 
-		messaging.peerSocket.removeEventListener('open', startCompanionConnection);
-		messaging.peerSocket.removeEventListener('message', parseWeatherData);
-		closeCompanionConnection();
+			messaging.peerSocket.removeEventListener('open', startCompanionConnection);
+			messaging.peerSocket.removeEventListener('message', parseWeatherData);
+			closeCompanionConnection();
+		}
+
 		hrm.stop();
 	}
 }
 
 if (display.aodAvailable && me.permissions.granted('access_aod')) {
 	display.aodAllowed = true;
-	renderFace();
-	display.addEventListener('change', renderFace);
 }
-
-//Events
+renderFace();
+display.addEventListener('change', renderFace);
 
 //Change heart rate sensor
 hrm.addEventListener('reading', () => {
