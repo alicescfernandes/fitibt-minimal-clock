@@ -7,6 +7,9 @@ import { battery } from 'power';
 import { HeartRateSensor } from 'heart-rate';
 import { preferences } from 'user-settings';
 import { me } from 'appbit';
+import { readFileSync } from 'fs';
+
+let settings = readFileSync('/mnt/assets/resources/keys.json', 'json');
 
 //icons by https://www.deviantart.com/ncrystal/art/Google-Now-Weather-Icons-597652261
 
@@ -31,12 +34,12 @@ let parseWeatherData = (evt) => {
 };
 
 let startCompanionConnection = (evt) => {
-	messaging.peerSocket.send('clock_ready');
+	messaging.peerSocket.send({ event: 'clock_ready', key: settings.OPEN_WEATHER_API });
 	deviceStarted = true;
 };
 
 let closeCompanionConnection = (evt) => {
-	messaging.peerSocket.send('clock_close');
+	messaging.peerSocket.send({ event: clock_close });
 };
 
 function renderFace() {
@@ -99,15 +102,20 @@ clock.ontick = (evt) => {
 	let today = evt.date;
 	let hours = today.getHours();
 	let mins = util.zeroPad(today.getMinutes());
+	console.log(hours);
 
 	if (preferences.clockDisplay === '12h') {
 		time_element.x = 336 / 2 - 25;
 
 		if (hours > 12) {
-			hour_element.text = 'PM';
 			hours = hours % 12;
+			hour_element.text = 'PM';
 		} else {
-			hour_element.text = 'AM';
+			if (hours >= 12) {
+				hour_element.text = 'PM';
+			} else {
+				hour_element.text = 'AM';
+			}
 		}
 	} else {
 		hour_element.text = '';

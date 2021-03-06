@@ -1,11 +1,11 @@
 import { me as companion } from 'companion';
 import * as util from '../common/utils';
 import * as messaging from 'messaging';
-import { API_KEY } from '../common/constants';
 import { settingsStorage } from 'settings';
 import { geolocation } from 'geolocation';
-const MILLISECONDS_PER_MINUTE = 1000 * 60;
+let API_KEY = '';
 
+const MILLISECONDS_PER_MINUTE = 1000 * 60;
 function getSetings() {
 	let city = undefined;
 	let key = API_KEY;
@@ -47,9 +47,12 @@ function locationError(city, key) {
 }
 
 function fetchWeather() {
+	console.log('fetchWeather');
 	let { city, key, useGeolocation } = getSetings();
 
 	if (useGeolocation === 'true') {
+		console.log('fetchWeather');
+
 		geolocation.getCurrentPosition(
 			(evt) => locationSuccess(evt, key),
 			(evt) => locationError(city, key),
@@ -77,11 +80,13 @@ function init() {
 		}
 
 		messaging.peerSocket.addEventListener('message', (evt) => {
-			if (evt.data === 'clock_ready') {
+			if (evt.data.event === 'clock_ready') {
+				API_KEY = evt.data.key;
+				console.log(API_KEY);
 				fetchWeather();
 				companion.addEventListener('wakeinterval', fetchWeather);
 			}
-			if (evt.data === 'clock_close') {
+			if (evt.data.event === 'clock_close') {
 				companion.removeEventListener('wakeinterval', fetchWeather);
 			}
 		});
